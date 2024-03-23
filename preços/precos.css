@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+:root{
+    --cor-0:#fff;
+    --cor-1:#E8EAFF;
+    --cor-2:#166AEA;
+
+    --madefor:"Wix Madefor Display";
+}
+
+body{
+    background-color: var(--cor-1);
+    font-family: var(--madefor);
+}
+
+/* Menu Inicial */
+
+.aside-menu{
+    background-color: var(--cor-0);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.042);
+    width: 100%;
+    height: 60px;
+    font-size: 14.5px;
+    display: flex;
+}
+.menu-logo{
+    width: 120px;
+    height: 100%;
+
+}
+
+.menu-logo .logo-wix{
+    width: 60px;
+    margin-bottom: -5px;
+    margin: 18px 30px;
+
+}
+
+.menu-nav{
+    height: 100%;
+}
+
+.menu-itens {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.menu-itens input{
+    display: none;
+}
+
+.menu-itens label{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.76);
+    padding: 15px;
+}
+
+.menu-itens label:hover{
+    color: var(--cor-2) ;
+    cursor: pointer;
+}
+
+.linha-vertical{
+    display: inline-block;
+    height: 20px;
+    margin-bottom:-6.7px ;
+    border-left: 1.5px solid rgba(0, 0, 0, 0.374);
+
+}
+
+.entrar-conta{
+    max-width: 300px;
+    margin: 0 15px;
+
+}
+
+.entrar-conta i{
+    margin:0 20px 0 0px;
+}
+.entrar-conta button{
+    margin-top: 9.5px;
+    width: 130px;
+    height: 40px;
+    border-radius: 40px;
+    outline: 0;
+    background-color: white;
+    color: var(--cor-2);
+    border: 1px solid var(--cor-2);
+}
+
+.entrar-conta button:hover{
+    background-color: var(--cor-2);
+    color: var(--cor-0);
+    transition-duration: 0.5s;
+}
+
