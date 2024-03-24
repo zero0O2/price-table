@@ -30,6 +30,7 @@ body{
     background-color: var(--cor-1);
     font-family: var(--madefor-display);
     height: 100%;
+   
 }
 
 /* ASIDE MENU */
@@ -41,6 +42,7 @@ body{
     font-size: 15px;
     display: flex;
     align-items: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.087);
 }
 
 .aside-nav .logo-wix{
@@ -130,7 +132,7 @@ body{
 
 .linha-vertical{
     height: 20px;
-    border-left: 1.5px solid rgba(0, 0, 0, 0.374);
+    border-left: 1.5px solid rgba(0, 0, 0, 0.335);
 }
 
 .entrar-conta{
@@ -168,7 +170,7 @@ body{
 
 .main-planos{
     text-align: center;
-    width: 500px;
+    width: 590px;
     font-weight: 500;
     display: flex;
     margin: auto;
@@ -214,7 +216,7 @@ body{
 /* MAIN CONTEUDO */
 
 div.conteudo{
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction:column ;
     z-index: 1;
@@ -224,10 +226,9 @@ main.planos{
     background-color: var(--cor-6);
     display: flex;
     margin: auto;
-    height: 180px;
+    height: 100px;
     margin-top: 30px;
     border-radius: 20px 20px 0 0;
-
 }
 
 div.planos{
@@ -262,7 +263,7 @@ div.planos p{
     background-color: var(--cor-0);
     width: 100%;
     height: 100%;
-    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.137);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.078);
 }
 
 /* PLANOS INTERATIVOS CHECKBOX */
@@ -271,7 +272,180 @@ div.conteudo main.planos input{
     display: none;
 }
 
-div.conteudo main.planos input:checked + label .planos{
-    background-color: white;
+
+/* PLANOS P */
+div.conteudo main.planos input.planos-p:checked + label .planos {
+    background-color: rgb(255, 255, 255);
+    color: #AA4DC8;
 }
 
+div.conteudo main.planos input.planos-p:checked + label div.planos p,
+div.conteudo main.planos input.planos-p:checked + label div.planos h2 {
+    color: #AA4DC8;
+}
+
+
+/* PLANOS N */
+div.conteudo main.planos input.planos-n:checked + label .planos {
+    background-color: rgb(255, 255, 255);
+    color: #AA4DC8;
+}
+
+div.conteudo main.planos input.planos-n:checked + label div.planos p,
+div.conteudo main.planos input.planos-n:checked + label div.planos h2 {
+    color: #AA4DC8;
+}
+
+
+/* PLANOS E */
+div.conteudo main.planos input.planos-e:checked + label .planos {
+    background-color: rgb(255, 255, 255);
+    color: #AA4DC8;
+}
+
+div.conteudo main.planos input.planos-e:checked + label div.planos p,
+div.conteudo main.planos input.planos-e:checked + label div.planos h2 {
+    color: #AA4DC8;
+}
+
+/* FINAL PLANOS */
+
+
+/* TABELA DE PREÇOS */
+
+table{
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.icon-anuncio{
+    display: flex;
+    margin-top: 20px;
+}
+
+i#icon-anuncio{
+    margin-top: 2.15px;
+    font-size: 10px;
+    color:  rgba(0, 0, 0, 0.459);
+}
+
+div.icon-anuncio p{
+    font-size: 12px; 
+    font-weight: 600;
+    color:  rgba(0, 0, 0, 0.459);
+    
+}
+
+.tabela{
+    margin: 40px 0 0 0;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+
+.tabela tr{
+    display: flex;
+}
+
+.tabela th{
+    flex-direction: column;
+    display: flex;
+
+    border: 1px solid #162d3d1e;
+    padding: 20px 10px 40px 10px;
+    width: 200px;
+    height: 230px;
+    align-items: center;
+}
+
+.tabela th:nth-child(3){ 
+    background-color: #F7F8FA;
+}
+
+.tabela .r{
+    margin-top: 20%;
+}
+
+.tabela th strong{
+    color: black;
+    font-size: 36px;
+}
+
+.tabela th sup{
+    font-size: 16px;
+}
+
+.tabela h3{
+    
+    font-size: 20px;
+    color: var(--cor-3);
+    font-weight: 600;
+}
+
+.tabela p{
+    color: var(--cor-3);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+tbody tr{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+table tbody td {
+    display: flex;
+    justify-content: center;    
+    border: 1px solid #162d3d1e;
+    padding: 30px 20px 30px 20px;
+    width: 200px;
+    height: 25px;
+    align-items: center;
+    font-size:14px;
+
+}
+.form-second{
+    color: #166AEA;
+    font-size: 13px;
+    position: absolute;
+    padding-top:28px ;
+}
+
+table thead th#th1 {
+    width: 300px;
+}
+
+table tbody td#t1 {
+    width: 300px;
+    display: flex;
+    justify-content:space-between;
+}
+
+/* mensagems info */
+
+
+table tbody td div#msgm{
+    position: absolute;
+    margin-left: 30px;
+    background-color: #ffffff;
+    width: 230px;
+    padding: 10px 20px;
+    border-radius:10px ;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.195);
+    display: none;
+    margin-top: -85px;
+}
+
+
+
+table tbody td i{
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+
+table tbody td i:hover + #msgm {
+    display: flex;
+}
