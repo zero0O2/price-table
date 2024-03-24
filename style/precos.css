@@ -272,6 +272,6 @@ div.conteudo main.planos input{
 }
 
 div.conteudo main.planos input:checked + label .planos{
-    background-color: var(--cor-0);
+    background-color: white;
 }
 
