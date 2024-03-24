@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
 
 *{
     box-sizing:border-box;
@@ -11,13 +12,24 @@
     --cor-0:#fff;
     --cor-1:#E8EAFF;
     --cor-2:#166AEA;
+    --cor-3:#162D3D;
+    --cor-4:#AA4DC8;
+    --cor-5:#CD68ED;
+    --cor-6:#CED3FF;
+    --cor-7:#BFC5FF;
 
-    --madefor:"Wix Madefor Display";
+    --madefor-text:"Wix Madefor Text";
+    --madefor-display:"Wix Madefor Display";
+}
+
+html{
+    height: 100%;
 }
 
 body{
     background-color: var(--cor-1);
-    font-family: var(--madefor);
+    font-family: var(--madefor-display);
+    height: 100%;
 }
 
 /* ASIDE MENU */
@@ -107,7 +119,7 @@ body{
 
 .menu-itens label{
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.633);
+    color: rgba(0, 0, 0, 0.698);
     padding: 15px;
 }
 
@@ -133,6 +145,7 @@ body{
 }
 
 .entrar-conta button{
+    font-family: var(--madefor-display);
     width: 130px;
     height: 40px;
     border-radius: 40px;
@@ -141,12 +154,124 @@ body{
     color: var(--cor-2);
     border: 1px solid var(--cor-2);
     margin-right: 20px;
+    transition-duration: 0.5s;
 }
 
 .entrar-conta button:hover{
     background-color: var(--cor-2);
     color: var(--cor-0);
-    transition-duration: 0.5s;
+    
 }
 
+
+/* PLANOS PREMIUM */
+
+.main-planos{
+    text-align: center;
+    width: 500px;
+    font-weight: 500;
+    display: flex;
+    margin: auto;
+    margin-top: 35px;
+    
+}
+
+.main-planos h1{
+    font-size: 32px;
+    color: var(--cor-3);
+    font-weight: 800;
+}
+
+.main-planos p{
+    line-height: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--cor-3);
+}
+
+.main-planos .comecar{
+    margin-top: 30px;
+    font-family: var(--madefor-display);
+    width: 125px;
+    height: 40px;
+    border-radius: 40px;
+    outline: 0;
+    background-color: var(--cor-4);
+    color: var(--cor-0);
+    border: 1px solid var(--cor-4);
+    margin-right: 20px;
+    transition-duration: 0.2s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-planos .comecar:hover{
+    background-color: var(--cor-5);
+    color: var(--cor-0);
+    
+}
+
+/* MAIN CONTEUDO */
+
+div.conteudo{
+    height: 100%;
+    display: flex;
+    flex-direction:column ;
+    z-index: 1;
+}
+
+main.planos{
+    background-color: var(--cor-6);
+    display: flex;
+    margin: auto;
+    height: 180px;
+    margin-top: 30px;
+    border-radius: 20px 20px 0 0;
+
+}
+
+div.planos{
+    width: 330px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.planos:hover{
+    background-color: var(--cor-7);
+    
+}
+
+div.planos h2{
+    font-size: 16px;
+    color: var(--cor-3);
+    font-weight: 300;
+}
+
+div.planos p{
+    font-size: 14px;
+    color: var(--cor-3);
+}
+
+.main-conteudo{
+    z-index: 0;
+    background-color: var(--cor-0);
+    width: 100%;
+    height: 100%;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.137);
+}
+
+/* PLANOS INTERATIVOS CHECKBOX */
+
+div.conteudo main.planos input{
+    display: none;
+}
+
+div.conteudo main.planos input:checked + label .planos{
+    background-color: var(--cor-0);
+}
 
