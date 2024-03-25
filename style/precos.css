@@ -35,6 +35,10 @@ body{
 
 /* ASIDE MENU */
 
+/* responsividade menu */
+
+
+
 .aside-menu{
     background-color: var(--cor-0);
     height: 60px;
@@ -45,9 +49,10 @@ body{
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.087);
 }
 
+
 .aside-nav .logo-wix{
     width: 60px;
-    margin: 18px 30px;
+    margin: 0px 30px;
 }
 
 .aside-nav .menu-list{
@@ -63,7 +68,18 @@ body{
 
 }
 
+.aside-nav .menu-list .menu-itens label{
+    display: flex;
+    align-items: center;
+
+}
+.aside-nav .menu-list .menu-itens label p{
+    margin-right: 8px;
+
+}
+
 .menu-list .menu-itens i{
+    margin-top: 2px;
     font-size: 10px;
 }
 
@@ -165,17 +181,91 @@ body{
     
 }
 
+.abaixar-menu ,.abaixar-menu + input{
+    display: none;
+}
+
+@media(max-width:1220px) {
+
+    .aside-nav#aside-menu .menu-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        display: none;
+        width: 350px;
+        height: 470px;
+        position: absolute;
+        background-color: #fff;
+        right: 0;
+        z-index: 2;
+        top: 000px;
+        transition-duration: 0s;
+        padding: 55px 20px 20px 20px;
+
+    }
+
+
+    .aside-nav#aside-menu .menu-list li{
+        font-size: 16px;
+        display: flex;
+        
+        
+    }
+
+    .aside-nav#aside-menu .menu-list li label p{
+        position: absolute;
+        left: 0;
+        margin-left: 25px;
+        
+    }
+    .aside-nav#aside-menu .menu-list li label i{
+        position: absolute;
+        right: 0;
+        margin-right: 25px;
+        font-size: 13px;
+        
+    }
+
+    .linha-vertical{
+        height: 0;
+        margin: 30px 0 20px 0 ;
+        width: 160px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.193);
+    }
+
+    .abaixar-menu{
+        display: flex;
+        position: absolute;
+        right: 0;
+        font-size: 25px;
+        margin: 20px;
+        z-index: 3;
+    }
+
+    #abaixar-menu:checked + .aside-nav#aside-menu .menu-list{
+        top:0px;
+        display: flex;
+    }
+
+    .entrar-conta{
+        display: none;
+    }
+}
 
 /* PLANOS PREMIUM */
 
 .main-planos{
     text-align: center;
-    width: 590px;
+    max-width: 590px;
     font-weight: 500;
     display: flex;
     margin: auto;
     margin-top: 35px;
     
+}
+
+.main-planos .div-planos{
+    margin: 0 11px; 
 }
 
 .main-planos h1{
@@ -345,7 +435,7 @@ div.icon-anuncio p{
     justify-content: center;
     position: sticky;
     top: 0px;
-    z-index: 3;
+    z-index: 22;
 }
 
 .tabela tr{
