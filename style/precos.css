@@ -400,13 +400,26 @@ div.conteudo main.planos input.planos-e:checked + label div.planos h2 {
 
 /* FINAL PLANOS */
 
+@media(max-width:1070px) {
+    .planos .plano2{
+        display: none;
+    }
+    
+}
+
+@media(max-width:740px) {
+    .planos .plano3{
+        display: none;
+    }
+    
+}
+
 
 /* TABELA DE PREÇOS */
 
 table{
     margin: auto;
     margin-bottom: 40px;
-    
 }
 
 .icon-anuncio{
@@ -427,6 +440,16 @@ div.icon-anuncio p{
     
 }
 
+.div-popular{
+    position: absolute;
+    top: -17px;
+    background-color: var(--cor-0);
+    color: var(--cor-4);
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.246);
+}
+
 .tabela{
     background-color: #fff;
     margin: 40px 0 0 0;
@@ -445,10 +468,9 @@ div.icon-anuncio p{
 .tabela th{
     flex-direction: column;
     display: flex;
-
     border: 1px solid #162d3d1e;
     padding: 20px 10px 40px 10px;
-    width: 200px;
+    width: 19%;
     height: 230px;
     align-items: center;
 }
@@ -502,7 +524,7 @@ table tbody td {
     justify-content: center;    
     border: 1px solid #162d3d1e;
     padding: 30px 20px 30px 20px;
-    width: 200px;
+    width: 19%;
     height: 25px;
     align-items: center;
     font-size:14px;
@@ -551,4 +573,47 @@ table tbody td i{
 
 table tbody td i:hover + #msgm {
     display: flex;
+}
+
+@media(max-width:1100px) {
+    table{
+        transform: scale(0.9);
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .tabela tr{
+        max-width: 100%;
+    }
+    
+}
+
+@media(max-width:820px) {
+    .tabela th:nth-child(5){ 
+        display: none;
+    }
+    td:nth-child(3){ 
+        display: none;
+    }
+    .tabela thead{
+        max-width: 200px;
+    }
+    
+}
+
+@media(max-width:600px) {
+    tr p#t1p{
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media(max-width:415px) {
+
+    tr p#t2p{
+        margin-bottom: 20px;
+    }
+    
 }
