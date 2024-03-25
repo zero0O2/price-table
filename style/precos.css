@@ -588,20 +588,34 @@ table tbody td i:hover + #msgm {
     .main-mobile{
         display: none;
     }
-
+    .main-planos .div-planos-mob {
+        display: none;
+    }
     
 }
 
 @media(max-width:1000px) {
+
+    .main-planos .div-planos {
+        display: none;
+    }
+
     table{
         display: none;
     }
     main.planos{
         display: none;
     }
-    .main-mobile{
 
+    body{
+        background-color: #e8eaff79;
     }
+    .aside-menu{
+        position: fixed;
+        margin-top: -35px;
+        height: 55px;
+    }
+
     .main-mobile .planos-mobile{
         background-color: #fff;
         margin:17px;
@@ -627,10 +641,38 @@ table tbody td i:hover + #msgm {
         margin-right: 8px;
     }
 
-    .main-mobile .planos-mobile .mostrar-recuros{
+    .main-mobile .planos-mobile .mostrar-recuros input{
+        display: none;
+
+    }
+
+    .planos-mobile .mostrar-recuros input:checked + div + hr + label .fa-chevron-up{
+        display: flex;
+    }
+
+    .planos-mobile .mostrar-recuros input:checked + div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planos-mobile .mostrar-recuros  div {
+        display: none;
+
+    }
+
+    .planos-mobile .mostrar-recuros input:checked + div + hr + label .fa-chevron-down{
+        display: none;
+    }
+
+    .main-mobile .planos-mobile .aba-recursos-mob{
         display: flex;
         align-items: center;
     }
+
+    .planos-mobile .mostrar-recuros label:hover{
+        cursor: pointer;
+    }
+
     .main-mobile .planos-mobile .preco-mobile {
         margin: 10px 0;
     }
@@ -642,6 +684,78 @@ table tbody td i:hover + #msgm {
 
     .main-mobile .planos-mobile .fa-chevron-up{
         display:none;
+    }
+
+    .especificacoes-mob p{
+        margin-top: 16px;
+        font-size: 14px;
+    }
+
+    .especificacoes-mob p#especificacoes-mob{
+        margin-top: 0px;
+        color: #162D3D;
+    }
+
+
+    .main-planos{
+        text-align: center;
+        max-width: 590px;
+        font-weight: 500;
+        display: flex;
+        margin: auto;
+        margin-top: 35px;
+        padding: 0 20px;
+    }
+    
+    .main-planos .div-planos-mob{
+        margin:0 auto 10px auto; 
+    }
+
+    .planos-mobile .plano-popular-mob{
+        width: 100%;
+        background-color: #ce68ed41;
+        padding:10px 20px 10px 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: rgb(255, 0, 255);
+        font-weight: 600;
+    }
+    
+    .main-planos h1{
+        font-size: 20px;
+        color: #000;
+        font-weight: 650;
+        margin-top: 50px;
+    }
+    
+    .main-planos p{
+        line-height: 24px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #000;
+        max-width: 400px;
+    }
+    
+    .main-planos .comecar{
+        margin-top: 30px;
+        font-family: var(--madefor-display);
+        width: 125px;
+        height: 40px;
+        border-radius: 40px;
+        outline: 0;
+        background-color: #e000fd;
+        color: var(--cor-0);
+        border: none;
+        margin-right: 20px;
+        transition-duration: 0.2s;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .main-planos .comecar:hover{
+        background-color: #9743b3;
+        color: var(--cor-0);
+        
     }
 
 }
