@@ -316,6 +316,7 @@ div.conteudo main.planos input.planos-e:checked + label div.planos h2 {
 table{
     margin: auto;
     margin-bottom: 40px;
+    
 }
 
 .icon-anuncio{
@@ -337,10 +338,14 @@ div.icon-anuncio p{
 }
 
 .tabela{
+    background-color: #fff;
     margin: 40px 0 0 0;
     border-collapse: collapse;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
 }
 
 .tabela tr{
@@ -359,6 +364,10 @@ div.icon-anuncio p{
 }
 
 .tabela th:nth-child(3){ 
+    background-color: #F7F8FA;
+}
+
+ td:nth-child(3){ 
     background-color: #F7F8FA;
 }
 
@@ -386,6 +395,10 @@ div.icon-anuncio p{
     color: var(--cor-3);
     font-size: 14px;
     font-weight: 300;
+}
+
+tbody{
+    z-index: 2;
 }
 
 tbody tr{
