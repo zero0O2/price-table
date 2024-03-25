@@ -14,13 +14,18 @@
             <nav class="aside-nav">
                 <img class="logo-wix" src="fotos/logo-wix.avif" alt="">
             </nav>
-            <nav class="aside-nav">
+            <label for="abaixar-menu" class="abaixar-menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" name="" id="abaixar-menu">
+
+            <nav class="aside-nav" id="aside-menu">
                 <ul class="menu-list">
         
                     <li class="menu-itens">
                         <input type="checkbox" name="" class="buton-criacao" id="criacao">
                         <label for="criacao">
-                            Criaçao <i class="fa-solid fa-chevron-down"></i>
+                            <p>Criaçao</p> <i class="fa-solid fa-chevron-down"></i>
                             <i class="fa-solid fa-chevron-up"></i>
                         </label>
                         
@@ -28,7 +33,7 @@
                     <li class="menu-itens">
                         <input type="checkbox" name="" class="buton-Negócios" id="Negócios">
                         <label for="Negócios">
-                            Negócios <i class="fa-solid fa-chevron-down"></i>
+                            <p>Negócios</p> <i class="fa-solid fa-chevron-down"></i>
                             <i class="fa-solid fa-chevron-up"></i>
                         </label>
                         
@@ -36,33 +41,33 @@
                     <li class="menu-itens">
                         <input type="checkbox" name="" class="buton-Recursos" id="Recursos">
                         <label for="Recursos">
-                            Recursos <i class="fa-solid fa-chevron-down"></i>
+                            <p>Recursos</p> <i class="fa-solid fa-chevron-down"></i>
                             <i class="fa-solid fa-chevron-up"></i>
                         </label>
                         
                     </li>
                     <li class="menu-itens">
                         <label for="Preços">
-                            Preços
+                            <p>Preços</p>
                         </label>
                         <input type="checkbox" name="" class="buton-Preços" id="Preços">
                     </li>
                     <li class="menu-itens">
                         <label for="Central-de-Ajuda">
-                            Central de Ajuda
+                            <p>Central de Ajuda</p>
                         </label>
                         <input type="checkbox" name="" class="buton-Central-de-Ajuda" id="Central-de-Ajuda">
                     </li>
                     <div class="linha-vertical"></div>
                     <li class="menu-itens">
                         <label for="Wix Studio">
-                            Wix Studio
+                            <p>Wix Studio</p>
                         </label>
                         <input type="checkbox" name="" class="Wix Studio" id="Central-de-Ajuda">
                     </li>
                     <li class="menu-itens">
                         <label for="Empresarial">
-                            Empresarial
+                            <p>Empresarial</p>
                         </label>
                         <input type="checkbox" name="" class="Empresarial" id="Central-de-Ajuda">
                     </li>
@@ -78,7 +83,7 @@
 
         <main class="main-premium">
             <aside class="main-planos">
-                <div>
+                <div class="div-planos">
                     <h1>Planos Premium Wix</h1>
                     <p>O Wix oferece GRATUITAMENTE centenas de templates, páginas ilimitadas e hospedagem profissional. Faça upgrade para um plano Premium e receba ainda mais.</p>
                     <button class="comecar">
