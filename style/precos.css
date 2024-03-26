@@ -467,6 +467,7 @@ div.icon-anuncio p{
     width: 19%;
     height: 230px;
     align-items: center;
+    
 }
 
 .tabela th:nth-child(3){ 
@@ -554,6 +555,7 @@ table tbody td div#msgm{
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.195);
     display: none;
     margin-top: -85px;
+    
 }
 
 
@@ -568,6 +570,8 @@ table tbody td i{
 
 table tbody td i:hover + #msgm {
     display: flex;
+    position: absolute;
+    z-index: 22;
 }
 
 @media(max-width:1100px) {
