@@ -462,11 +462,13 @@ div.icon-anuncio p{
     flex-direction: column;
     display: flex;
     border: 1px solid #162d3d1e;
-    padding: 20px 10px 40px 10px;
+    padding: 25px 15px 30px 15px ;
     width: 19%;
     height: 230px;
     align-items: center;
-    
+    justify-content:space-between;
+    margin: 0;
+    position: relative;
 }
 
 .tabela th:nth-child(3){ 
@@ -477,8 +479,18 @@ div.icon-anuncio p{
     background-color: #F7F8FA;
 }
 
-.tabela .r{
-    margin-top: 20%;
+.tabela th hr{
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%,-50%);
+}
+.tabela th .icon-anuncio{
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%,-50%);
+    width: 90%;
 }
 
 .tabela th strong{
@@ -583,7 +595,7 @@ table tbody td i:hover + #msgm {
     }
 
     .tabela tr{
-        max-width: 100%;
+        width: 100%;
     }   
 }
 
